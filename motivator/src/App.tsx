@@ -42,7 +42,7 @@ const App: React.FC = () => {
             setQuote(random);
           }
 
-          if (updated >= 10) {
+          if (updated >= 7200) {
             setIsActive(false);
             setShowSalute(true);
             setQuote("🎆 If you continue at this pace, you will surely find your place in the future without difficulty! ⭐💼");

@@ -42,6 +42,7 @@ h2 {
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 button {
@@ -55,6 +56,7 @@ button {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 100px;
 }
 
 button:hover {
@@ -84,4 +86,67 @@ button:active {
 @keyframes saluteAnim {
   from { transform: scale(1); }
   to { transform: scale(1.2); }
+}
+
+/* ===================== */
+/* 📱 Responsive Design  */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .salute {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    font-size: 0.95rem;
+  }
+
+  .salute {
+    font-size: 1.6rem;
+  }
 }

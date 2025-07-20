@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 const App: React.FC = () => {
   const [time, setTime] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
-  const [quote, setQuote] = useState<string>("Qani, kettik boshladik! 🚀💪");
+  const [quote, setQuote] = useState<string>("Come on, let's get started! 🚀💪");
   const [showSalute, setShowSalute] = useState<boolean>(false);
   const [dailyTime, setDailyTime] = useState<number>(0);
   const [isMusicPlaying, setIsMusicPlaying] = useState<boolean>(false);
